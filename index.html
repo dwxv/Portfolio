@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<!--
+    bg-body     color
+    text-color "textcolor/text color"
+-->
+
+<body class="bg-body text-white font-poppins pb-12">
+
+    <!--HEADER-->
+    <header class="py-6"> <!--padding y-axis 6-->
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <a href="https://dnxv.github.io/Portfolio/index.html" class="text-lg font-bold">Dave</a>
+            <div class="hidden md:flex space-x-12 items-center">
+                <a href="#" class="text-selected-text">Home</a>
+                <a href="#work">My work</a>
+                <a href="#hire"><button class="px-6 py-2 bg-theme font-bold">Let's Talk</button></a>
+            </div>
+            <!-- Little box for mobile -->
+            <div class="md:hidden">
+                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+                        fill="white" />
+                </svg>
+                <!-- FIX: Slide in menu from left video-->
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container mt-0 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <div class="flex flex-wrap md:flex-nowrap">
+            <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+                <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+                    <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+                    </a>
+                    <a href="#work" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Work</span>
+                    </a>
+                    <a href="#hire" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Let's Talk</span>
+                    </a>
+                </div>
+            </nav>
+            <!--flex flex-wrap 
+                justify-center       flex box centered   
+                lg:ml-20             large screen margin left 20  
+                md:justify-start     medium and up for flex box
+                max-w-xl             max width XL of an element
+                mt-0                 margin top 0 
+                md:my-36             margin y-axis 36 (white space)-->
+            <div class="flex flex-wrap justify-center lg:ml-20 md:justify-start max-w-xl mt-0 md:my-20">
+                <!--
+                    font-bold 
+                    text-5xl        text size (mobile)
+                    md:text-6xl     medium and up text 6xl 
+                    lg:text-7xl     large screen 7xl text size
+                    text-center     on mobile
+                    md:text-left    medium screen to align left
+                -->
+                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">Building <br> beautiful
+                    web experiences</h1>
+                <div class="w-full flex justify-center md:justify-start">
+                    <!--
+                        px-8 py-4      padding x-axis y-axis
+                        bg-theme       color
+                        text-white 
+                        font-bold 
+                        mt-12          margin top 12
+                        flex 
+                        items-center 
+                        space-x-3      space between svg (icon/pic) and text
+                    -->
+                    <button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
+                        <div>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.4375 11C14.4375 11.9117 14.0753 12.786 13.4307 13.4307C12.786 14.0753 11.9117 14.4375 11 14.4375C10.0883 14.4375 9.21398 14.0753 8.56932 13.4307C7.92466 12.786 7.5625 11.9117 7.5625 11C7.5625 10.0883 7.92466 9.21398 8.56932 8.56932C9.21398 7.92466 10.0883 7.5625 11 7.5625C11.9117 7.5625 12.786 7.92466 13.4307 8.56932C14.0753 9.21398 14.4375 10.0883 14.4375 11Z"
+                                    fill="white" />
+                                <path
+                                    d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <span>View my work.</span>
+                    </button>
+                </div>
+            </div>
+            <!-- image -->
+            <!-- 
+                w-3/4           width 3/4
+                mt-12           margin top 12
+                md:absolute     absolute to go behind text
+                -mt-6           
+                md:mt-0         medium margin top 6
+                right-0 
+                -z-1            custom css in index.css
+            -->
+
+            <!-- FIX: mobile                         w-1/3 mt-30 mr-8 md:absolute -mt-0 ml-48 md:mt-0 right-0 -z-1 -->
+            <!--<img src="img/1.2.png" alt="man" class="ml-40 w-1/3">  -->
+            <!-- FACE IMAGE TO THE RIGHT -->
+            <figure class="">
+                <img src="img/1.2.png" alt="man" class="align">
+                <!--<figcaption class="figure-caption text-center">AI Generated Picture</figcaption>-->
+            </figure>
+
+        </div>
+    </div>
+
+    <!-- My work -->
+    <!--
+            container 
+            mt-64               white space margin top 64
+        -->
+    <!-- original : <div class="container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"> -->
+    <div class="container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <section class="w-full"> <!-- width full -->
+            <h2 id="work" class="secondary-title">My work</h2>
+
+            <!-- Put description??-->
+            <p class="section-paragraph2"></p>
+
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 mt-14 ml-20">
+
+                <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+                <div class="blog-post">
+
+                    <!-- Image class -->
+                    <div class="blog-post-img">
+                        <img src="img/coloredHex.gif" alt="">
+                    </div>
+
+                    <div>
+                        <div class="blog-post-date">
+                            <span>01</span>
+                        </div>
+                        <div class="blog-post-title">
+                            <h3>NASA Minds</h3>
+                        </div>
+                        <p class="blog-post-text">
+                            Programmed Hexapod to avoid objects by using ultrasonic sensor measurements and pre-existing movement
+                            control
+                            <br><br>Established communication between Tello Drones and the Hexapod using sockets and
+                            Packet Sender
+                            <br><br>Used: Raspberry Pi 4, Python, Sockets, Packet Sender
+                        </p>
+                        <a href="#" class="blog-post-cta">Code</a>
+                    </div>
+                </div>
+                <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+                <div class="blog-post">
+                    <!-- <img src="img/12.JPG" class="w-full bg-nav h-36 lg:h-72 object-cover"> -->
+                    <!--<div class="" style="background-image: url('img/12.JPG'); background-size: cover; background-position-x: -80px;">-->
+
+                    <div class="blog-post-img">
+                        <img src="img/robosub2.gif" class="w-1/2">
+                    </div>
+
+                    <div>
+                        <div class="blog-post-date">
+                            <span>02</span>
+                        </div>
+                        <!-- class="card-title" -->
+                        <div class="blog-post-title">
+                            <h3 class="">RoboSub</h3>
+                        </div>
+                        <!-- class="card-body" -->
+                        <p class="blog-post-text">
+                            Built a robot with a team of Mechanical, Electrical, and Computer Engineers. 
+                            The class provided us with all the necessary resources including the tools, 
+                            frame, hull, actuators, electronics, and more to allow us to build this.                             
+
+                            <br><br>Used: Arduino, Jetson Nano, Python, ROS, Computer Vision
+                        </p>
+                        <a href="#" class="blog-post-cta">Code</a>
+                    </div>
+                </div>
+
+
+                <!-- ///////////////////////////////////////////////////////////////////////// -->
+                <div class="blog-post">
+
+                    <!-- Image class -->
+                    <div class="blog-post-img">
+                        <img src="img/puzzle.gif" alt="" style="height: 98%;">
+                    </div>
+
+                    <div>
+                        <div class="blog-post-date">
+                            <span>03</span>
+                        </div>
+                        <div class="blog-post-title">
+                            <h3>Puzzle JavaFX</h3>
+                        </div>
+                        <p class="blog-post-text">
+                            Built a GUI design with Object Oriented Programming allows a user to play with a
+                            puzzle of hexagons to match colors. This program also solves the puzzle with recursion.
+
+                            <br><br>Used: Java, JavaFX, TableView, GridPane, Recursion
+                        </p>
+                        <a href="#" class="blog-post-cta">Code</a>
+                    </div>
+                </div>
+                <!---///////////////////////////////////////////////////////////////////////////////////////////-->
+                <div class="blog-post">
+
+                    <!-- Image class -->
+                    <div class="blog-post-img">
+                        <img src="img/facegen.gif" alt="">
+                    </div>
+
+                    <div>
+                        <div class="blog-post-date">
+                            <span>04</span>
+                        </div>
+                        <div class="blog-post-title">
+                            <h3>AI Generated Faces</h3>
+                        </div>
+                        <p class="blog-post-text">
+                            Used a pre-existing Google Colab Notebook that trains a model that generates images
+                            <br>- Generated a few pictures of Kramer from Seinfeld based on text/prompt input
+                            <br><br>Used: huggingface, DreamBooth, Stable Diffusion, Google Colab, Machine Learning
+                        </p>
+                        <a href="#" class="blog-post-cta">Code</a>
+                    </div>
+                </div>
+
+                <!--//////////////////////////////////////////////////////////////////////////////-->
+                <div class="blog-post">
+
+                    <!-- Image class -->
+                    <div class="blog-post-img">
+                        <img src="img/pygame.PNG" alt="" style="width: 102%; height: 98%;">
+                    </div>
+
+                    <div>
+                        <div class="blog-post-date">
+                            <span>05</span>
+                        </div>
+                        <div class="blog-post-title">
+                            <h3>Space invaders</h3>
+                        </div>
+                        <p class="blog-post-text">
+                            Programmed a small Python program with PyGame to play Space invaders and get a new score.
+
+                            <br><br>Used: Python, PyGame
+                        </p>
+                        <a href="#" class="blog-post-cta">Code</a>
+                    </div>
+                </div>
+
+                <!---///////////////////////////////////////////////////////////////////////////////////////////-->
+                <div class="blog-post">
+
+                    <!-- Image class -->
+                    <div class="blog-post-img">
+                        <img src="img/ML-5.JPG" alt="">
+                    </div>
+
+                    <div>
+                        <div class="blog-post-date">
+                            <span>06</span>
+                        </div>
+                        <div class="blog-post-title">
+                            <h3>Machine Learning (Classifying Bacteria Species)</h3>
+                        </div>
+                        <p class="blog-post-text">
+                            Designed an ANN Structure that consisted of three layers: 286 inputs, 100 hidden neurons,
+                            and 10 outputs. The accuracy is: 0.776675. 
+
+                            <br><br>Used: Python, Kaggle, Machine Learning, and a dataset of over 200,000 samples.
+                        </p>
+                        <a href="#" class="blog-post-cta">Code</a>
+                    </div>
+                </div>
+
+                <!--/////////////////////////////////////////////////////////////////////////////////-->
+
+                <div class="blog-post">
+                    <!-- Image class -->
+                    <div class="blog-post-img">
+                        <img src="img/ML-1p.JPG" alt="">
+                    </div>
+
+                    <div>
+                        <div class="blog-post-date">
+                            <span>07</span>
+                        </div>
+                        <div class="blog-post-title">
+                            <h3>Machine Learning Project (Student Performance in Exams)</h3>
+                        </div>
+                        <p class="blog-post-text">
+                            Achieved an accuracy for each model of 94%. The main factor that helps students with scores
+                            was based on their lunch program.
+
+                            <br><br>Used: Google Colab, Python, OneHotEncoding, K-Neighbors Classifier, Logistic
+                            Regression, and Seaborn
+                        </p>
+                        <a href="#" class="blog-post-cta">Code</a>
+                    </div>
+                </div>
+                <!--/////////////////////////////////////////////////////////////////////////////////-->
+
+                <div class="blog-post">
+
+                    <!-- Image class -->
+                    <div class="blog-post-img">
+                        <img src="img/Databook.PNG" alt="">
+                    </div>
+
+                    <div>
+                        <div class="blog-post-date">
+                            <span>08</span>
+                        </div>
+                        <div class="blog-post-title">
+                            <h3>Databook with JavaFX</h3>
+                        </div>
+                        <p class="blog-post-text">
+                            Created a small database of "People" Objects, including Student, Teacher, and
+                            Facility types. The database can be modified by adding, removing, or changing
+                            entries and is saved to a text file using IO operations.
+
+                            <br><br>Used: Java, JavaFX, FileIO
+                        </p>
+                        <a href="#" class="blog-post-cta">Code</a>
+                    </div>
+                </div>
+            </div>
+            <!--/////////////////////////////////////////////////////////////////////////////////-->
+
+    </div>
+    </section>
+    </div>
+
+
+
+    <!-- Hire me -->
+    <div class="container mt-32 flex justify-between items-center mx-auto px-0 md:px-14 lg:px-24 w-full">
+        <section class="w-full">
+            <h2 id="hire" class="secondary-title">Let's Talk</h2>
+            <p class="text-secondary mt-2 max-w-xl">Feel free to to contact me.</p>
+
+            <!--                                         
+                    lg:gap-32 middle space horizontal
+                -->
+            <div class="w-full grid lg:grid-cols-2 gap-2 lg:gap-32 mt-0">
+                <div class="space-y-12">
+
+
+
+                    <form action="https://formsubmit.co/dcamac36@calstatela.edu" method="POST">
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display: none;">
+
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <!-- Redirect -->
+                        <input type="hidden" name="_next" value="https://dnxv.github.io/Portfolio/Success.html">
+
+                        <div>
+                            <label class="text-white block py-2 text-xl font-bold">Name</label>
+                            <input type="text" name="name" class="w-full border border-input-border bg-input px-4 py-4">
+                        </div>
+                        <div>
+                            <label class="text-white block py-2 text-xl font-bold">Email</label>
+                            <input type="email" name="email"
+                                class="w-full border border-input-border bg-input px-4 py-4">
+                        </div>
+                        <div class="mb-2">
+                            <label class="text-white block py-2 text-xl font-bold">Message</label>
+                            <textarea type="message" name="message"
+                                class="w-full border border-input-border bg-input px-4 py-4 h-40 resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-2 bg-theme text-white font-bold">Send it!</button>
+                    </form>
+
+
+
+
+                </div>
+
+                <div class="mt-12">
+                    <!-- Contact info -->
+                    <a href="mailto:dcamac36@calstatela.edu"
+                        class="text-secondary underline mt-3 block">dcamac36@calstatela.edu</a>
+
+                    <!-- Socials -->
+                    <div class="flex mt-10 space-x-6">
+                        <!-- Github -->
+                        <a href="https://github.com/dnxv">
+                            <img src="img/github.svg" alt="" fill="">
+                            <svg class="w-8 h-8 lg:w-12 lg:h-12" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                                
+                            </svg>
+                        </a>
+                        <!-- Handshake -->
+                        <a href="https://app.joinhandshake.com/stu/users/14876036">
+                            <!--<svg class="w-8 h-8 lg:w-12 lg:h-12" width="42" height="42" viewBox="0 0 42 42" fill="none"></svg>-->
+                            <img src="img/handshake.svg" alt="">
+                        </a>
+                        <!-- Kaggle -->
+                        <a href="https://www.kaggle.com/daveyw164">
+                            <img src="img/kaggle.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
