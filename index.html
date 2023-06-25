@@ -72,8 +72,8 @@
                     text-center     on mobile
                     md:text-left    medium screen to align left
                 -->
-                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">This is <br> David's Portfolio.</h1>
-                <div class="w-full flex justify-center md:justify-start">
+                <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl xl:mt-24 text-center md:text-left">This is <br> David's Portfolio.</h1>
+                <div class="w-full flex xl:-mt-24 justify-center md:justify-start">
                     <!--
                         px-8 py-4      padding x-axis y-axis
                         bg-theme       color
@@ -84,7 +84,7 @@
                         items-center 
                         space-x-3      space between svg (icon/pic) and text
                     -->
-                    <button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
+                    <button class="px-8 py-4 bg-theme xl:my-32 text-white font-bold mt-12 flex items-center space-x-3">
                         <div>
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -192,86 +192,37 @@
                         <a href="https://github.com/dwxv/NASA-MINDS-Hexapod." class="blog-post-cta">Code</a>
                     </div>
                 </div>
-                
-                <!-- ///////////////////////////////////////////////////////////////////////// -->
-                <div class="blog-post">
 
-                    <!-- Image class -->
+                <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+                <div class="blog-post">
+                    <!-- <img src="img/12.JPG" class="w-full bg-nav h-36 lg:h-72 object-cover"> -->
+                    <!--<div class="" style="background-image: url('img/12.JPG'); background-size: cover; background-position-x: -80px;">-->
+
                     <div class="blog-post-img">
-                        <img src="img/moon.JPG" alt="" style="height: 98%;">
+                        <img src="img/sub.jpg" class="">
                     </div>
 
                     <div>
                         <div class="blog-post-date">
                             <span>03</span>
                         </div>
+                        <!-- class="card-title" -->
                         <div class="blog-post-title">
-                            <h3>Moon VR Game</h3>
+                            <h3 class="">RoboSub</h3>
                         </div>
+                        <!-- class="card-body" -->
                         <p class="blog-post-text">
-                            
-                            - Player can teleport on lunar surface, grab a flashlight that works, place a flag on a pole, fix a generator, and find easter eggs
-                            <br>- Utilized OpenXR Plugin, Ray Interactors, XR Interaction Toolkit, 
-                            Locomotion and Snap Turning to mitigate motion sickness, grabbable objects, background audio, XR 
-                            Grab Interactable, snapping objects using sockets, and interfaces with text
+                            - Built a robot with a team of Mechanical, Electrical, and Computer Engineers.
+                            The class provided us with all the necessary resources including the tools, 
+                            frame, hull, actuators, electronics, soldering equipment, and more to allow us to build this
 
-                            <br><br>Used: Unity, C#, Free Unity Assets
+                            <br><br>Used: Arduino, Jetson Nano, Python, ROS, Computer Vision
                         </p>
-                        <a href="https://github.com/dwxv/MOON-VR-GAME" class="blog-post-cta">Code</a>
+                        <a href="https://github.com/Robotics-Courses/Autonomous_Robotics_Class" class="blog-post-cta">Code</a>
                     </div>
-                </div>
-
-                <!--//////////////////////////////////////////////////////////////////////////////-->
-                <div class="blog-post">
-
-                    <!-- Image class -->
-                    <div class="blog-post-img">
-                        <img src="img/pygame.PNG" alt="" style="width: 102%; height: 98%;">
-                    </div>
-
-                    <div>
-                        <div class="blog-post-date">
-                            <span>04</span>
-                        </div>
-                        <div class="blog-post-title">
-                            <h3>Space invaders</h3>
-                        </div>
-                        <p class="blog-post-text">
-                            - Created a Space Invaders game that keeps track of the score 
-                            <br> - Designed an interface where the player can control a ship that shoots at aliens as they approach with increasing speed
-
-                            <br><br>Used: Python, PyGame, free image graphics
-                        </p>
-                        <a href="https://github.com/dwxv/Pygame-Space-Invaders" class="blog-post-cta">Code</a>
-                    </div>
-                </div>
-
-                <!-- ///////////////////////////////////////////////////////////////////////// -->
-                <div class="blog-post">
-
-                    <!-- Image class -->
-                    <div class="blog-post-img">
-                        <img src="img/puzzle.gif" alt="" style="height: 100%;">
-                    </div>
-
-                    <div>
-                        <div class="blog-post-date">
-                            <span>05</span>
-                        </div>
-                        <div class="blog-post-title">
-                            <h3>Puzzle JavaFX</h3>
-                        </div>
-                        <p class="blog-post-text">
-                            - Built a GUI design with Object Oriented Programming allows a user to play with a
-                            puzzle of hexagons to match colors
-                            <br> - This program also solves the puzzle with recursion
-
-                            <br><br>Used: Java, JavaFX, TableView, GridPane, Recursion
-                        </p>
-                        <a href="https://github.com/dwxv/JavaFX-Puzzle-Recursion-" class="blog-post-cta">Code</a>
-                    </div>
-                </div>
-
+                </div>                
+               
                 <!---///////////////////////////////////////////////////////////////////////////////////////////-->
                 <div class="blog-post">
 
@@ -282,7 +233,7 @@
 
                     <div>
                         <div class="blog-post-date">
-                            <span>06</span>
+                            <span>04</span>
                         </div>
                         <div class="blog-post-title">
                             <h3>Machine Learning - Classifying Bacteria Species</h3>
@@ -308,7 +259,7 @@
 
                     <div>
                         <div class="blog-post-date">
-                            <span>07</span>
+                            <span>05</span>
                         </div>
                         <div class="blog-post-title">
                             <h3>Machine Learning - Student Performance in Exams</h3>
@@ -324,67 +275,7 @@
                         <a href="https://www.kaggle.com/code/daveyw164/notebookb652805cf4/notebook" class="blog-post-cta">Code</a>
                     </div>
                 </div>
-                
-                <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-                <div class="blog-post">
-                    <!-- <img src="img/12.JPG" class="w-full bg-nav h-36 lg:h-72 object-cover"> -->
-                    <!--<div class="" style="background-image: url('img/12.JPG'); background-size: cover; background-position-x: -80px;">-->
-
-                    <div class="blog-post-img">
-                        <img src="img/robosub2.gif" class="">
-                    </div>
-
-                    <div>
-                        <div class="blog-post-date">
-                            <span>08</span>
-                        </div>
-                        <!-- class="card-title" -->
-                        <div class="blog-post-title">
-                            <h3 class="">RoboSub</h3>
-                        </div>
-                        <!-- class="card-body" -->
-                        <p class="blog-post-text">
-                            - Built a robot with a team of Mechanical, Electrical, and Computer Engineers.
-                            The class provided us with all the necessary resources including the tools, 
-                            frame, hull, actuators, electronics, soldering equipment, and more to allow us to build this
-
-                            <br><br>Used: Arduino, Jetson Nano, Python, ROS, Computer Vision
-                        </p>
-                        <a href="https://github.com/Robotics-Courses/Autonomous_Robotics_Class" class="blog-post-cta">Code</a>
-                    </div>
-                </div>
-
-                <!--/////////////////////////////////////////////////////////////////////////////////-->
-<!--
-            <div class="blog-post">
--->
-                    <!-- Image class -->
-<!--
-                    <div class="blog-post-img">
-                        <img src="img/Databook.PNG" alt="">
-                    </div>
-
-                    <div>
-                        <div class="blog-post-date">
-                            <span>08</span>
-                        </div>
-                        <div class="blog-post-title">
-                            <h3>Databook with JavaFX</h3>
-                        </div>
-                        <p class="blog-post-text">
-                            Created a small database of "People" Objects, including Student, Teacher, and
-                            Facility types. The database can be modified by adding, removing, or changing
-                            entries and is saved to a text file using IO operations
-
-                            <br><br>Used: Java, JavaFX, FileIO
-                        </p>
-                        <a href="#" class="blog-post-cta">Code</a>
-                    </div>
-                </div>
-            </div>
-
--->
+               
             <!--/////////////////////////////////////////////////////////////////////////////////-->
 
     </div>
